@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2DD4C81-AF98-4C5A-B396-7DCD1053C249}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GirisEkran</RootNamespace>
+    <AssemblyName>GirisEkran</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBaret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaret.Designer.cs">
+      <DependentUpon>FrmBaret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEldiven.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEldiven.Designer.cs">
+      <DependentUpon>FrmEldiven.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisYap.Designer.cs">
+      <DependentUpon>FrmGirisYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsAyakkabı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsAyakkabı.Designer.cs">
+      <DependentUpon>FrmIsAyakkabı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsPantolonu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsPantolonu.Designer.cs">
+      <DependentUpon>FrmIsPantolonu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKayıtOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKayıtOl.Designer.cs">
+      <DependentUpon>FrmKayıtOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAylıkKar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAylıkKar.Designer.cs">
+      <DependentUpon>FrmAylıkKar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStokMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStokMenu.Designer.cs">
+      <DependentUpon>FrmStokMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTulumlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTulumlar.Designer.cs">
+      <DependentUpon>FrmTulumlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYelekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYelekler.Designer.cs">
+      <DependentUpon>FrmYelekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
+    <EmbeddedResource Include="FrmBaret.resx">
+      <DependentUpon>FrmBaret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEldiven.resx">
+      <DependentUpon>FrmEldiven.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGirisYap.resx">
+      <DependentUpon>FrmGirisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsAyakkabı.resx">
+      <DependentUpon>FrmIsAyakkabı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsPantolonu.resx">
+      <DependentUpon>FrmIsPantolonu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKayıtOl.resx">
+      <DependentUpon>FrmKayıtOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAylıkKar.resx">
+      <DependentUpon>FrmAylıkKar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStokMenu.resx">
+      <DependentUpon>FrmStokMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTulumlar.resx">
+      <DependentUpon>FrmTulumlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYelekler.resx">
+      <DependentUpon>FrmYelekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ProjeDataSet.xsc">
+      <DependentUpon>ProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjeDataSet.xss">
+      <DependentUpon>ProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
